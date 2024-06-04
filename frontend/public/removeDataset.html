@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Remove Dataset</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+	<button onclick="window.location.href='http://localhost:4321/index.html';">Home</button>
+	<button onclick="window.location.href='http://localhost:4321/addDataset.html';">Add</button>
+	<button onclick="window.location.href='http://localhost:4321/removeDataset.html';">Remove</button>
+	<button onclick="window.location.href='http://localhost:4321/listDataset.html';">List</button>
+	<button onclick="window.location.href='http://localhost:4321/insight.html';">Insights</button>
+</div>
+
+<div class="content-div">
+	<div class="form-section">
+		<h1>Remove a Sections Dataset</h1>
+		<form id="removeDatasetForm">
+			<div>
+				<label for="removeDatasetId">Dataset ID:</label>
+				<input type="text" id="removeDatasetId" name="removeDatasetId" required>
+			</div>
+			<button type="submit">Remove Dataset</button>
+		</form>
+		<div id="removeFeedbackMessage"></div>
+	</div>
+</div>
+
+
+<script src="removeDataset.js"></script>
+</body>
+</html>
